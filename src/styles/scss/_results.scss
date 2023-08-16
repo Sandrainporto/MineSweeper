@@ -1,0 +1,78 @@
+.game__results {
+}
+.results {
+}
+.results__modal {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transition: 2s;
+  background: #8c9e94;
+}
+.results__modal.active {
+  position: absolute;
+  z-index: 16;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 30px 10px;
+  width: 80%;
+  max-width: 700px;
+  min-width: 260px;
+}
+
+.results__cols,
+.results__line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.results__cols {
+  margin-bottom: 10px;
+}
+.results__line {
+  border: 2px solid #4f8083;
+  border-radius: 20px;
+  background: #69abafa1;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.results__line:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.item,
+.cols__item {
+  width: 20%;
+
+  text-align: center;
+  min-width: 60px;
+}
+
+.cols__item {
+  color: white;
+  font-size: 1.5rem;
+}
+.line_number {
+  width: 2%;
+  min-width: 25px;
+  text-align: left;
+}
+.line_name {
+}
+.line_size {
+}
+.line_moves {
+}
+.line_time {
+}

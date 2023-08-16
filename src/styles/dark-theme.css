@@ -1,0 +1,15 @@
+.settings__buttons {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+html.dark, .dark body {
+  background: #534d4d;
+  color: #fff;
+}
+
+.button {
+  background: #6e7456;
+}
